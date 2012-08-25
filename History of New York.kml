@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>History of New York.kml</name>
-	<Style id="sn_ylw-pushpin0">
+	<Style id="s_ylw-pushpin">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -17,7 +17,17 @@
 			<color>73ff0000</color>
 		</PolyStyle>
 	</Style>
-	<Style id="sh_ylw-pushpin">
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -32,29 +42,34 @@
 			<color>73ff0000</color>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="msn_ylw-pushpin0">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_ylw-pushpin0</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_ylw-pushpin</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Folder>
 		<name>History of New York</name>
 		<open>1</open>
 		<Placemark>
 			<name>415 Clinton Ave</name>
 			<description>1861</description>
-			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<Polygon>
 				<tessellate>1</tessellate>
 				<outerBoundaryIs>
 					<LinearRing>
 						<coordinates>
-							-73.9670357638186,40.68571968323982,0 -73.96695063767712,40.68572702213628,0 -73.96692866856017,40.68571268858759,0 -73.9669031159543,40.68571616691723,0 -73.96689035569132,40.68573127621356,0 -73.96689139941886,40.68574328279785,0 -73.96680433797897,40.68575299314233,0 -73.96681735694401,40.6858095183545,0 -73.96705146328731,40.68578262300268,0 -73.9670357638186,40.68571968323982,0 
+							-73.96703686180189,40.68571841739758,0 -73.96695380010951,40.68572626518364,0 -73.96692893128586,40.68571204059921,0 -73.96690164452137,40.68571525475701,0 -73.96688824831102,40.68573050260455,0 -73.96689139941886,40.68574328279785,0 -73.96680433797897,40.68575299314233,0 -73.96681793018345,40.68581070113404,0 -73.96705340693403,40.68578424587137,0 -73.96703686180189,40.68571841739758,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>413 Clinton Ave</name>
+			<description>1890</description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-73.96707376267987,40.68582265623408,0 -73.96683383293787,40.68584840896373,0 -73.96685831553911,40.68593429682731,0 -73.96709238802396,40.68591161916302,0 -73.96707376267987,40.68582265623408,0 
 						</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
